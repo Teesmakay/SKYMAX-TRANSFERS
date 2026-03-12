@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>SkyMaxTransfers | Luxury Transport Services</title>
+<meta name="description" content="SkyMaxTransfers offers detailed luxury transport services including airport transfers, private chauffeurs, city tours, funeral transport, and long-distance travel.">
+<link rel="stylesheet" href="styles.css">
+<style>
+/* Inline additional services page CSS overrides for modern layout */
+
+/* SECTION BLOCKS */
+.service-block {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 80px 5%;
+  gap: 40px;
+  flex-wrap: wrap;
+  background: #111;
+  border-bottom: 1px solid #222;
+}
+
+.service-block:nth-child(even) {
+  flex-direction: row-reverse; /* alternate image/text */
+  background: #0a0a0a;
+}
+
+.service-block img {
+  width: 500px;
+  max-width: 100%;
+  height: 350px;
+  object-fit: cover;
+  border-radius: 10px;
+  flex: 1 1 400px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.5);
+}
+
+.service-block .service-text {
+  flex: 1 1 400px;
+  color: #fff;
+  padding: 20px;
+}
+
+.service-block .service-text h3 {
+  font-size: 28px;
+  color: #d4af37;
+  margin-bottom: 15px;
+}
+
+.service-block .service-text p {
+  font-size: 16px;
+  line-height: 1.7;
+  margin-bottom: 15px;
+}
+
+.service-block .service-text ul {
+  list-style: disc;
+  padding-left: 20px;
+  margin-bottom: 20px;
+}
+
+.service-block .service-text a.cta {
+  display: inline-block;
+  background: #d4af37;
+  color: black;
+  padding: 14px 28px;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.service-block .service-text a.cta:hover {
+  background: white;
+}
+
+/* CTA Section */
+.cta-section {
+  padding: 80px 5%;
+  text-align: center;
+  background: linear-gradient(90deg, #1a1a1a, #111);
+  border-top: 2px solid #d4af37;
+  border-bottom: 2px solid #d4af37;
+}
+
+.cta-section h2 {
+  font-size: 34px;
+  color: #d4af37;
+  margin-bottom: 30px;
+}
+
+.cta-section .cta {
+  padding: 16px 32px;
+  font-size: 18px;
+}
+
+/* MOBILE RESPONSIVE */
+@media(max-width:768px) {
+  .service-block {
+    flex-direction: column !important;
+    padding: 50px 5%;
+  }
+
+  .service-block img {
+    height: 260px;
+  }
+
+  .service-block .service-text h3 {
+    font-size: 24px;
+  }
+
+  .service-block .service-text p {
+    font-size: 15px;
+  }
+
+  .cta-section h2 {
+    font-size: 28px;
+  }
+}
+</style>
+</head>
+
+<body>
+<header>
+  <div class="logo">SKYMAX TRANSFERS</div>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="services.html">Services</a>
+    <a href="booking.html">Booking</a>
+    <a href="about.html">About</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+</header>
+
+<!-- HERO -->
+<section class="hero">
+  <img src="images/cape-town-tour.jpg" alt="Luxury SkyMaxTransfers vehicle at Table Mountain">
+  <div class="hero-text">
+    <h1>Our Luxury Transport Services</h1>
+    <p>Professional chauffeur and transport services across Cape Town and beyond.</p>
+    <a href="booking.html" class="cta">Book a Transfer</a>
+  </div>
+</section>
+
+<!-- SERVICES BLOCKS -->
+<section class="services">
+
+  <div class="service-block">
+    <img src="images/airport-transfer.jpg" alt="Airport Transfers Cape Town">
+    <div class="service-text">
+      <h3>Airport Transfers</h3>
+      <p>Reliable airport pickup and drop-off from Cape Town International Airport using luxury Mercedes vehicles.</p>
+      <ul>
+        <li>Meet & greet service at arrivals</li>
+        <li>Mercedes V-Class & C-Class vehicles</li>
+        <li>24/7 availability for early flights</li>
+      </ul>
+      <a href="booking.html" class="cta">Book Airport Transfer</a>
+    </div>
+  </div>
+
+  <div class="service-block">
+    <img src="images/private-chauffeur.jpg" alt="Private Chauffeur Cape Town">
+    <div class="service-text">
+      <h3>Private Chauffeur Hire</h3>
+      <p>Hire a professional chauffeur for business, events, or full-day private travel in Cape Town and surrounding areas.</p>
+      <ul>
+        <li>Flexible hours & locations</li>
+        <li>Professional, experienced drivers</li>
+        <li>Mercedes luxury fleet</li>
+      </ul>
+      <a href="booking.html" class="cta">Hire a Chauffeur</a>
+    </div>
+  </div>
+
+  <div class="service-block">
+    <img src="images/cape-town-tour.jpg" alt="Cape Town Tours">
+    <div class="service-text">
+      <h3>Cape Town City Tours</h3>
+      <p>Explore Cape Town with private tours including Table Mountain, Cape Point, and the Winelands.</p>
+      <ul>
+        <li>Customizable tour routes</li>
+        <li>Luxury vehicle comfort</li>
+        <li>Experienced local guides</li>
+      </ul>
+      <a href="booking.html" class="cta">Book a Tour</a>
+    </div>
+  </div>
+
+  <div class="service-block">
+    <img src="images/funeral-transport.jpg" alt="Funeral Transport">
+    <div class="service-text">
+      <h3>Funeral Transport</h3>
+      <p>Professional, discreet, and respectful funeral transport services for families and funeral homes.</p>
+      <ul>
+        <li>Luxury hearse and passenger vehicles</li>
+        <li>On-time arrivals for services</li>
+        <li>Full route planning and support</li>
+      </ul>
+      <a href="booking.html" class="cta">Arrange Funeral Transport</a>
+    </div>
+  </div>
+
+  <div class="service-block">
+    <img src="images/repatriation.jpg" alt="Repatriation Transport">
+    <div class="service-text">
+      <h3>Repatriation Services</h3>
+      <p>Assistance with logistics for repatriation travel, ensuring safe and comfortable transport.</p>
+      <ul>
+        <li>Coordination with embassies</li>
+        <li>Comfortable long-distance travel</li>
+        <li>Professional support for families</li>
+      </ul>
+      <a href="booking.html" class="cta">Book Repatriation Transport</a>
+    </div>
+  </div>
+
+  <div class="service-block">
+    <img src="images/minibus-transfer.jpg" alt="Cross Border Minibus Transport">
+    <div class="service-text">
+      <h3>South Africa → Zimbabwe Transfers</h3>
+      <p>Comfortable long-distance minibus transfers from Cape Town or Johannesburg to Zimbabwe using Toyota Quantum minibuses.</p>
+      <ul>
+        <li>Safe & reliable long-distance travel</li>
+        <li>Group travel in comfort</li>
+        <li>Flexible departure schedules</li>
+      </ul>
+      <a href="booking.html" class="cta">Book Cross Border Transfer</a>
+    </div>
+  </div>
+
+</section>
+
+<!-- CTA SECTION -->
+<section class="cta-section">
+  <h2>Book Your Luxury Transfer Now</h2>
+  <a href="booking.html" class="cta">Make a Booking</a>
+</section>
+
+<footer>
+  <p>© 2026 SKYMAX Transfers | Cape Town Luxury Chauffeur Services</p>
+</footer>
+
+</body>
+</html>

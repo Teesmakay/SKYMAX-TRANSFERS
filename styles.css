@@ -1,0 +1,343 @@
+/* ===============================
+GLOBAL
+=============================== */
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+background:#ffffff;
+color:#222;
+line-height:1.6;
+}
+
+/* ===============================
+HEADER
+=============================== */
+
+header{
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:20px 8%;
+background:#000;
+position:sticky;
+top:0;
+z-index:1000;
+}
+
+.logo{
+font-size:22px;
+font-weight:bold;
+color:#d4af37;
+letter-spacing:2px;
+}
+
+nav a{
+color:white;
+text-decoration:none;
+margin-left:25px;
+font-size:15px;
+transition:0.3s;
+}
+
+nav a:hover{
+color:#d4af37;
+}
+
+/* ===============================
+HERO
+=============================== */
+
+.hero{
+position:relative;
+height:75vh;
+display:flex;
+align-items:center;
+justify-content:center;
+text-align:center;
+overflow:hidden;
+color:white;
+}
+
+.hero img{
+position:absolute;
+top:0;
+left:0;
+width:100%;
+height:100%;
+object-fit:cover;
+filter:brightness(50%);
+}
+
+.hero-text{
+position:relative;
+z-index:2;
+max-width:700px;
+padding:20px;
+}
+
+.hero-text h1{
+font-size:48px;
+margin-bottom:20px;
+}
+
+.hero-text p{
+font-size:20px;
+margin-bottom:30px;
+}
+
+/* ===============================
+BUTTON
+=============================== */
+
+.cta{
+background:#d4af37;
+color:black;
+padding:14px 30px;
+text-decoration:none;
+font-weight:bold;
+border-radius:6px;
+transition:0.3s;
+display:inline-block;
+box-shadow:0 5px 15px rgba(0,0,0,0.3);
+}
+
+.cta:hover{
+background:black;
+color:#d4af37;
+}
+
+/* ===============================
+SERVICES
+=============================== */
+
+.services{
+padding:90px 8%;
+text-align:center;
+background:#f5f5f5;
+}
+
+.services h2{
+font-size:36px;
+margin-bottom:60px;
+color:#000;
+position:relative;
+}
+
+.services h2::after{
+content:"";
+width:80px;
+height:3px;
+background:#d4af37;
+display:block;
+margin:15px auto 0;
+}
+
+.service-grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+gap:40px;
+}
+
+.service{
+background:white;
+border-radius:12px;
+overflow:hidden;
+transition:0.35s;
+box-shadow:0 10px 30px rgba(0,0,0,0.08);
+}
+
+.service img{
+width:100%;
+height:200px;
+object-fit:cover;
+}
+
+.service h3{
+margin:20px 0 10px;
+color:#000;
+font-size:20px;
+}
+
+.service p{
+padding:0 20px 25px;
+font-size:15px;
+color:#555;
+}
+
+.service:hover{
+transform:translateY(-10px);
+box-shadow:0 20px 40px rgba(0,0,0,0.15);
+}
+
+/* ===============================
+FLEET
+=============================== */
+
+.fleet{
+padding:90px 0;
+text-align:center;
+background:#000;
+color:white;
+}
+
+.fleet h2{
+font-size:36px;
+color:#d4af37;
+margin-bottom:40px;
+}
+
+.fleet-image{
+width:100%;
+height:600px;
+overflow:hidden;
+}
+
+.fleet-image img{
+width:100%;
+height:100%;
+object-fit:cover;
+display:block;
+}
+
+.fleet p{
+max-width:900px;
+margin:35px auto;
+padding:0 20px;
+font-size:17px;
+color:#ddd;
+}
+
+/* ===============================
+WHY CHOOSE US
+=============================== */
+
+.why{
+padding:90px 10%;
+background:#f5f5f5;
+text-align:center;
+}
+
+.why h2{
+color:#000;
+margin-bottom:35px;
+font-size:34px;
+}
+
+.why ul{
+list-style:none;
+max-width:600px;
+margin:auto;
+}
+
+.why li{
+margin:15px 0;
+font-size:18px;
+color:#444;
+}
+
+/* ===============================
+CTA SECTION
+=============================== */
+
+.cta-section{
+padding:90px 10%;
+text-align:center;
+background:#000;
+color:white;
+}
+
+.cta-section h2{
+margin-bottom:35px;
+font-size:36px;
+}
+
+/* ===============================
+FOOTER
+=============================== */
+
+footer{
+background:#000;
+padding:35px;
+text-align:center;
+font-size:14px;
+color:#999;
+}
+
+/* ===============================
+MOBILE
+=============================== */
+
+@media(max-width:768px){
+
+.hero-text h1{
+font-size:34px;
+}
+
+.hero-text p{
+font-size:16px;
+}
+
+nav{
+display:none;
+}
+
+.fleet-image{
+height:260px;
+}
+
+.service-grid{
+gap:25px;
+}
+
+}
+.reveal{
+opacity:0;
+transform:translateY(40px);
+transition:all 0.8s ease;
+}
+
+.reveal.active{
+opacity:1;
+transform:translateY(0);
+}
+.whatsapp-button{
+position:fixed;
+bottom:25px;
+right:25px;
+background:#25D366;
+color:white;
+padding:14px 20px;
+border-radius:30px;
+text-decoration:none;
+font-weight:bold;
+box-shadow:0 6px 20px rgba(0,0,0,0.3);
+z-index:999;
+}
+
+.whatsapp-button:hover{
+background:#1ebd5a;
+}
+.cta-section{
+  padding:80px 10%;
+  text-align:center;
+  background: linear-gradient(90deg, #1a1a1a, #111);
+  border-top: 2px solid #d4af37;
+  border-bottom: 2px solid #d4af37;
+}
+
+.cta-section h2{
+  margin-bottom:30px;
+  font-size:34px;
+  color:#d4af37;
+}
+
+.cta-section .cta{
+  padding:16px 32px;
+  font-size:18px;
+}

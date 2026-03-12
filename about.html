@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>SkyMaxTransfers | About Us</title>
+<meta name="description" content="Learn about SkyMaxTransfers, your premium chauffeur and luxury transport service in Cape Town. Professional drivers, luxury fleet, and unmatched service.">
+<link rel="stylesheet" href="styles.css">
+<style>
+/* About Page Specific Styles */
+
+.about-hero{
+  position: relative;
+  height: 60vh;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  text-align:center;
+  background: url('mercedes-vclass.jpg') no-repeat center center/cover;
+  color: white;
+}
+
+.about-hero::after{
+  content:"";
+  position:absolute;
+  top:0; left:0; right:0; bottom:0;
+  background: rgba(0,0,0,0.6);
+}
+
+.about-hero .hero-text{
+  position: relative;
+  z-index: 2;
+}
+
+.about-hero h1{
+  font-size: 42px;
+  color: #d4af37;
+  margin-bottom: 10px;
+}
+
+.about-hero p{
+  font-size: 18px;
+}
+
+/* ABOUT CONTENT */
+.about-content{
+  padding: 60px 5%;
+  background:#111;
+  color:white;
+  max-width:1000px;
+  margin:0 auto;
+  line-height:1.7;
+}
+
+.about-content h2{
+  font-size: 32px;
+  color: #d4af37;
+  margin-bottom: 20px;
+}
+
+.about-content p{
+  font-size: 16px;
+  margin-bottom: 20px;
+}
+
+.values-section{
+  display:flex;
+  flex-wrap:wrap;
+  justify-content: space-between;
+  gap: 20px;
+  margin-top: 40px;
+}
+
+.value-card{
+  flex:1 1 250px;
+  background:#1a1a1a;
+  padding:20px;
+  border-radius:10px;
+  box-shadow:0 10px 25px rgba(0,0,0,0.5);
+  transition:0.3s;
+}
+
+.value-card h3{
+  color:#d4af37;
+  margin-bottom:10px;
+}
+
+.value-card p{
+  font-size:15px;
+}
+
+.value-card:hover{
+  transform:translateY(-5px);
+}
+
+/* CTA Section */
+.cta-section{
+  padding: 80px 5%;
+  text-align:center;
+  background: linear-gradient(90deg, #1a1a1a, #111);
+  border-top: 2px solid #d4af37;
+  border-bottom: 2px solid #d4af37;
+}
+
+.cta-section h2{
+  font-size:34px;
+  color:#d4af37;
+  margin-bottom:30px;
+}
+
+.cta-section .cta{
+  padding:16px 32px;
+  font-size:18px;
+}
+
+/* MOBILE */
+@media(max-width:768px){
+  .about-hero h1{
+    font-size:32px;
+  }
+  .about-hero p{
+    font-size:16px;
+  }
+  .value-card{
+    flex:1 1 100%;
+  }
+}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="logo">SKYMAX TRANSFERS</div>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="services.html">Services</a>
+    <a href="booking.html">Booking</a>
+    <a href="about.html">About</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+</header>
+
+<!-- HERO -->
+<section class="about-hero" style="background: url('images/mercedes-vclass.jpg') no-repeat center center/cover;">
+  <div class="hero-text">
+    <h1>About SkyMaxTransfers</h1>
+    <p>Premium chauffeur and luxury transport services across Cape Town and beyond.</p>
+  </div>
+</section>
+
+<!-- ABOUT CONTENT -->
+<section class="about-content">
+  <h2>Our Story</h2>
+  <p>SkyMaxTransfers was founded with the goal of providing Cape Town with a professional, reliable, and luxurious transport service. We combine world-class vehicles with experienced chauffeurs to ensure every journey is comfortable, safe, and memorable.</p>
+  <p>Our mission is to set the standard for luxury transport in South Africa, catering to business travelers, tourists, and families alike.</p>
+
+  <h2>Our Values</h2>
+  <div class="values-section">
+    <div class="value-card">
+      <h3>Professionalism</h3>
+      <p>Our chauffeurs are trained, courteous, and committed to providing a seamless experience for every client.</p>
+    </div>
+    <div class="value-card">
+      <h3>Safety & Reliability</h3>
+      <p>We prioritize the safety of our passengers with well-maintained vehicles and punctual service.</p>
+    </div>
+    <div class="value-card">
+      <h3>Luxury & Comfort</h3>
+      <p>Travel in style with our premium Mercedes fleet and Toyota Quantum minibuses for group travel.</p>
+    </div>
+    <div class="value-card">
+      <h3>Customer Satisfaction</h3>
+      <p>Our goal is to exceed expectations on every trip, ensuring complete satisfaction and repeat clients.</p>
+    </div>
+  </div>
+</section>
+
+<!-- CTA SECTION -->
+<section class="cta-section">
+  <h2>Experience Luxury Transport Today</h2>
+  <a href="booking.html" class="cta">Book Now</a>
+</section>
+
+<footer>
+  <p>© 2026 SKYMAX Transfers | Cape Town Luxury Chauffeur Services</p>
+</footer>
+
+</body>
+</html>
