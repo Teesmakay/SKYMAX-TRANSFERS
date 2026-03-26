@@ -6,30 +6,30 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>About Future Class Transfers | Cape Town Chauffeur Service</title>
+<title>Contact Future Class Transfers | Cape Town Chauffeur & Airport Transfers</title>
 
-<meta name="description" content="Learn about Future Class Transfers, a trusted luxury chauffeur and airport transfer service in Cape Town. Professional drivers, premium vehicles and reliable service.">
+<meta name="description" content="Contact Future Class Transfers for luxury airport transfers, private chauffeur services, VIP transport and city tours in Cape Town. Call or WhatsApp us for fast bookings.">
 
-<meta name="keywords" content="about chauffeur Cape Town, luxury transport Cape Town company, airport transfer service Cape Town, private driver Cape Town">
+<meta name="keywords" content="contact chauffeur Cape Town, airport transfer contact Cape Town, luxury transport Cape Town contact, private driver Cape Town phone">
 
 <meta name="author" content="Future Class Transfers">
 
-<link rel="canonical" href="https://yourdomain.com/about.html">
-
-<link rel="icon" href="FutureClassTransferslogo.png" type="image/png">
+<link rel="canonical" href="https://yourdomain.com/contact.html">
 
 <link rel="stylesheet" href="styles.css">
+
+<link rel="icon" href="FutureClassTransferslogo.png" type="image/png">
 
 <!-- Bootstrap -->
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
 
 <style>
 
-/* HERO */
+/* YOUR ORIGINAL CSS (UNCHANGED) */
 
-.about-hero{
+.contact-hero{
 position:relative;
-height:60vh;
+height:50vh;
 display:flex;
 align-items:center;
 justify-content:center;
@@ -38,7 +38,7 @@ background:url('mercedes-vclass.png') no-repeat center center/cover;
 color:white;
 }
 
-.about-hero::after{
+.contact-hero::after{
 content:"";
 position:absolute;
 top:0;
@@ -48,67 +48,74 @@ bottom:0;
 background:rgba(0,0,0,0.6);
 }
 
-.about-hero .hero-text{
+.contact-hero .hero-text{
 position:relative;
 z-index:2;
 }
 
-.about-hero h1{
+.contact-hero h1{
 font-size:42px;
 color:#d4af37;
+margin-bottom:10px;
 }
 
-.about-hero p{
+.contact-hero p{
 font-size:18px;
 }
 
-/* CONTENT */
-
-.about-content{
+.contact-section{
 padding:60px 5%;
 background:#111;
 color:white;
-max-width:1000px;
-margin:0 auto;
-line-height:1.7;
-}
-
-.about-content h2{
-color:#d4af37;
-margin-bottom:20px;
-}
-
-.values-section{
 display:flex;
 flex-wrap:wrap;
-gap:20px;
-margin-top:40px;
+gap:40px;
+justify-content:center;
 }
 
-.value-card{
-flex:1 1 250px;
+.contact-form{
+flex:1 1 400px;
+max-width:500px;
+display:flex;
+flex-direction:column;
+gap:20px;
+}
+
+.contact-form input,
+.contact-form textarea,
+.contact-form select{
+padding:12px 15px;
+border-radius:5px;
+border:none;
+font-size:16px;
+width:100%;
 background:#1a1a1a;
-padding:20px;
+color:white;
+}
+
+.contact-form .cta{
+background:#d4af37;
+color:black;
+padding:16px 30px;
+font-size:18px;
+font-weight:bold;
+border:none;
+border-radius:5px;
+cursor:pointer;
+}
+
+.contact-info{
+flex:1 1 300px;
+max-width:400px;
+background:#1a1a1a;
+padding:30px;
 border-radius:10px;
 }
 
-.value-card h3{
-color:#d4af37;
-}
-
-/* CTA */
-
-.cta-section{
-padding:80px 5%;
-text-align:center;
-background:#111;
-border-top:2px solid #d4af37;
-border-bottom:2px solid #d4af37;
-}
-
-.cta-section h2{
-color:#d4af37;
-margin-bottom:20px;
+.map{
+width:100%;
+margin-top:40px;
+height:350px;
 }
 
 </style>
@@ -137,8 +144,8 @@ Future Class Transfers
 <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
 <li class="nav-item"><a class="nav-link" href="services.html">Services</a></li>
 <li class="nav-item"><a class="nav-link" href="booking.html">Booking</a></li>
-<li class="nav-item"><a class="nav-link active" href="about.html">About</a></li>
-<li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+<li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+<li class="nav-item"><a class="nav-link active" href="contact.html">Contact</a></li>
 
 </ul>
 </div>
@@ -148,71 +155,76 @@ Future Class Transfers
 
 <!-- HERO -->
 
-<section class="about-hero">
+<section class="contact-hero">
 <div class="hero-text">
 
-<h1>About Future Class Transfers</h1>
-
-<p>Luxury chauffeur and airport transfer services in Cape Town you can trust.</p>
+<h1>Contact Future Class Transfers</h1>
+<p>Book your airport transfer, private chauffeur or VIP transport in Cape Town today.</p>
 
 </div>
 </section>
 
-<!-- CONTENT -->
+<!-- CONTACT SECTION -->
 
-<section class="about-content">
+<section class="contact-section">
 
-<h2>Our Story</h2>
+<form id="contact-form" class="contact-form">
 
-<p>
-Future Class Transfers was founded to provide reliable, professional and luxury transport services in Cape Town. We saw a gap in the market for a service that combines comfort, punctuality and true customer care.
-</p>
+<label>Full Name</label>
+<input type="text" name="name" required>
 
-<p>
-Today, we proudly serve tourists, business professionals, VIP guests and families, offering airport transfers, private chauffeur services and long-distance travel across South Africa.
-</p>
+<label>Email</label>
+<input type="email" name="email" required>
 
-<h2>Why Choose Us</h2>
+<label>Phone</label>
+<input type="tel" name="phone" required>
 
-<p>
-We focus on delivering a premium experience from the moment you book until you reach your destination. Our chauffeurs are experienced, our vehicles are well-maintained, and our service is designed around your comfort and convenience.
-</p>
+<label>Service</label>
 
-<div class="values-section">
+<select name="service" required>
+<option value="">Select Service</option>
+<option>Airport Transfer</option>
+<option>Private Chauffeur</option>
+<option>Cape Town Tour</option>
+<option>Funeral Transport</option>
+<option>Repatriation</option>
+<option>Cross Border Transfer</option>
+</select>
 
-<div class="value-card">
-<h3>Professional Chauffeurs</h3>
-<p>Experienced, well-trained drivers focused on safety and customer service.</p>
-</div>
+<label>Message</label>
+<textarea name="message"></textarea>
 
-<div class="value-card">
-<h3>Reliable Service</h3>
-<p>Always on time, whether it's an airport pickup or long-distance trip.</p>
-</div>
+<button type="submit" class="cta">Send Message</button>
 
-<div class="value-card">
-<h3>Luxury Fleet</h3>
-<p>Mercedes-Benz vehicles and comfortable minibuses for group travel.</p>
-</div>
+</form>
 
-<div class="value-card">
-<h3>24/7 Availability</h3>
-<p>We operate around the clock to meet your travel needs anytime.</p>
-</div>
+<div class="contact-info">
+
+<h3>Contact Details</h3>
+
+<p><strong>Phone / WhatsApp:</strong> +27 65 371 2172</p>
+<p><strong>Email:</strong> info@futureclasstransfers.co.za</p>
+<p><strong>Location:</strong> Cape Town, South Africa</p>
+<p><strong>Hours:</strong> 24/7 Availability</p>
+
+<a href="https://wa.me/27653712172" class="cta" style="display:inline-block;margin-top:15px;">
+Chat on WhatsApp
+</a>
 
 </div>
 
 </section>
+<!-- MAP -->
 
-<!-- CTA -->
-
-<section class="cta-section">
-
-<h2>Book Your Luxury Transfer Today</h2>
-
-<a href="booking.html" class="cta">Make a Booking</a>
-
-</section>
+<div class="map">
+<iframe 
+src="https://maps.google.com/maps?q=Cape%20Town&t=&z=11&ie=UTF8&iwloc=&output=embed"
+width="100%" 
+height="100%" 
+style="border:0;" 
+loading="lazy">
+</iframe>
+</div>
 
 <!-- FOOTER -->
 
@@ -220,15 +232,37 @@ We focus on delivering a premium experience from the moment you book until you r
 <p>© 2026 Future Class Transfers | Cape Town Luxury Chauffeur Services</p>
 </footer>
 
+<!-- EMAILJS -->
+
+<script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+
+<script>
+(function(){
+emailjs.init("3IgTtz1UxZXbtt4eT");
+})();
+
+document.getElementById("contact-form").addEventListener("submit", function(e){
+e.preventDefault();
+
+emailjs.sendForm("service_4r4b12i", "template_cdsapoh", this)
+.then(function(){
+alert("✅ Message sent successfully! We will get back to you shortly.");
+document.getElementById("contact-form").reset();
+}, function(error){
+alert("❌ Failed to send message. Please try again or contact us via WhatsApp.");
+});
+});
+</script>
+
 <!-- STRUCTURED DATA -->
 
 <script type="application/ld+json">
 {
  "@context": "https://schema.org",
- "@type": "LocalBusiness",
- "name": "Future Class Transfers",
- "areaServed": "Cape Town",
- "serviceType": "Chauffeur Service"
+ "@type": "ContactPage",
+ "name": "Future Class Transfers Contact",
+ "telephone": "+27653712172",
+ "areaServed": "Cape Town"
 }
 </script>
 
